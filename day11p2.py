@@ -3,7 +3,7 @@ with open("day11_input.txt", "r") as f:
 
 stones = [int(i) for i in data.split()]
 
-for i in range(25):
+for i in range(75):
     index = 0
     while index < len(stones):
         stone = stones[index]
@@ -17,4 +17,5 @@ for i in range(25):
         else:
             stones[index] = stone * 2024
         index += 1
-    print(len(stones))
+
+print(len(stones))
